@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="envio.css">
+    <link rel="shortcut icon" href="images.ico" type="image/x-icon">
+    <title>Envio de Certificados</title>
+</head>
+
+<body>
+    <header>
+        <div class="sair"><a class="icon-sair" href="../Login/login.html"><ion-icon name="exit-outline"></a></ion-icon>
+        </div>
+        <div class="imagem"><img src="Versao_fundo_azul_PNG-01-1024x1024_webp.webp" alt=""> </div>
+
+    </header>
+    <main>
+        <div class="navigation">
+            <ul>
+                <li class="list ativar">
+                    <a href="../Home/tela-inicial.html">
+                        <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                        <span class="titulo">Home</span>
+                    </a>
+                </li>
+
+                <li class="list">
+                    <a href="../Perfil/perfil.html">
+                        <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                        <span class="titulo">Perfil</span>
+                    </a>
+                </li>
+
+                <li class="list">
+                    <a href="../Dashbord/dashboard.html">
+                        <span class="icon"><ion-icon name="desktop-outline"></ion-icon></span>
+                        <span class="titulo">Dashboard</span>
+                    </a>
+                </li>
+
+                <li class="list">
+                    <a href="../Historico/historico.html">
+                        <span class="icon"><ion-icon name="calendar-number-outline"></ion-icon></span>
+                        <span class="titulo">Histórico de Envios</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="../Envio/envio.html">
+                        <span class="icon"><ion-icon name="cloud-upload-outline"></ion-icon></span>
+                        <span class="titulo">Envio de Certificados</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div id="envio">
+            <h1>Enviar Certificados</h1>
+
+            <form action="processar-formulario.php" method="POST" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="nome">Título da Atividade:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="data">Data:</label>
+                    <input type="date" id="data" name="data" required>
+
+
+
+                    <label for="opcoes">Tipo de Atividade:</label>
+                    <select id="opcoes" name="opcoes">
+                        <option value="">Selecione uma opção</option>
+                        <option value="opcao1"> Palestra </option>
+                        <option value="opcao2"> Curso </option>
+                        <option value="opcao3"> Estágio </option>
+                        <option value="opcao4"> Monitoria </option>
+                        <option value="opcao5"> Visita Técnica </option>
+                    </select>
+
+
+
+                    <label for="desc">Descrição da Atividade:</label>
+                    <input type="text" id="desc" name="desc" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="horas">Quantidade de Horas:</label>
+                    <input type="text" id="horas" name="horas" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="arquivo1" class="custom-file-upload">Anexar arquivo</label>
+                    <input type="file" id="arquivo1" name="arquivo1" accept=".pdf,.doc,.docx">
+                </div>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div id="informaçao">
+            <ul>
+                <li class="info">
+                    <a
+                        href="https://www.google.com/maps/place/Universidade+Vila+Velha+-+UVV/@-20.3541156,-40.2992142,15z/data=!4m6!3m5!1s0xb8160595555555:0xeab993fdd7de1f61!8m2!3d-20.3541156!4d-40.2992142!16s%2Fg%2F11x7vrzxb?entry=ttu">
+                        <span class="icon-info"><ion-icon name="location-outline"></ion-icon></span>
+                        <span class="titulo-info">Avenida Comissário José Dantas de Melo, 21 - Boa Vista, Vila
+                            Velha</span>
+                    </a>
+                </li>
+                <li class="info">
+                    <a href="https://www.instagram.com/uvvoficial/?hl=pt-br">
+                        <span class="icon-info"><ion-icon name="logo-instagram"></ion-icon></span>
+                        <span class="titulo-info">uvvoficial</span>
+                    </a>
+                </li>
+                <li class="info">
+                    <a href="#">
+                        <span class="icon-info"><ion-icon name="people-outline"></ion-icon></span>
+                        <span class="titulo-info">Desenvolvido por Grupo 7 © 2023</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script src="envio.js"></script>
+</body>
+
+</html>

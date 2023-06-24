@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    background-color: #262559;
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+}
+
+div.imagem {
+    width: 95vw;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+div.sair {
+    width: 5vw;
+    height: 15vh;
+}
+
+.icon-sair {
+    position: relative;
+    left: 20px;
+    top: 35px;
+    color: white;
+    font-size: 3rem;
+}
+
+main {
+    display: flex;
+    min-width: 100vh;
+    height: 80vh;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 400px;
+}
+
+.form-group {
+    margin-bottom: 30px;
+    max-width: 400px;
+}
+
+
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #F2A413;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.custom-file-upload:hover {
+    background-color: #FFCC6C;
+}
+
+#envio {
+    margin-top: 30px;
+    height: 670px;
+    width: 90%;
+    margin: 70px;
+    padding: 20px;
+    background-color: lightgray;
+}
+
+h1 {
+    text-align: center;
+    width: 350px;
+}
+
+.navigation {
+    position: relative;
+    height: 80vh;
+    background-color: #F2A413;
+    width: 70px;
+    box-shadow: 10px 0 0#FFCC6C;
+    border-left: 10px solid #F2A413;
+    overflow-x: hidden;
+    transition: 0.5s ease-in-out;
+}
+
+.navigation:hover {
+    width: 300px;
+}
+
+.navigation ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-left: 5px;
+    padding-top: 40px;
+}
+
+.navigation ul li {
+    position: relative;
+    list-style: none;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+}
+
+.navigation ul li a {
+    position: relative;
+    display: flex;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+}
+
+.navigation ul li a .icon {
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 70px;
+}
+
+.navigation ul li a .icon ion-icon {
+    position: relative;
+    font-size: 1.7rem;
+    z-index: 1;
+}
+
+.navigation ul li a .titulo {
+    position: relative;
+    display: block;
+    padding-left: 10px;
+    height: 60px;
+    line-height: 60px;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.navigation ul li.ativar {
+    background-color: #FFCC6C;
+}
+
+.navigation ul li.ativar a::before {
+    content: '';
+    position: absolute;
+    top: -30px;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    background-color: #F2A413;
+    border-radius: 50%;
+    box-shadow: 15px 15px #FFCC6C;
+}
+
+.navigation ul li.ativar a::after {
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    background-color: #F2A413;
+    border-radius: 50%;
+    box-shadow: 15px -15px #FFCC6C;
+}
+
+footer {
+    position: fixed;
+    width: 100vw;
+    height: 5vh;
+    background-color: #D96600;
+}
+
+#informaçao {
+    padding-left: 20px;
+    width: 100vw;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+}
+
+#informaçao ul {
+    display: flex;
+    width: 100vw;
+    height: 5vh;
+}
+
+#informaçao ul li {
+    width: 100vw;
+    height: 5vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+}
+
+#informaçao ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+}
+
+#informaçao ul li a .icon-info {
+    padding-right: 20px;
+    position: relative;
+    font-size: 2rem;
+}
