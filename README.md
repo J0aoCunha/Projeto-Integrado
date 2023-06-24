@@ -1,10 +1,13 @@
-## Informações Sobre o Projeto Integrado
+# Informações Sobre o Projeto Integrado
 
 Nome dos Integrantes: **Marcelo Cunha Lima Nogueira Dessaune, Davi Garcia Corrêa Muniz, João Victor da Silva Cunha, Murilo Rezende Coutinho e Vitor Tozi Francischetto**
 
+
 Professor: **Otávio**
 
+
 Matéria: **Construção de Software para Web**
+
 
 Turma:**CC1Mb**
 
